@@ -11,7 +11,7 @@ This allows you to use __JSX__, a form of html for javascript making things like
 
 To use a component you have to make a file.js eg: header.js/main.js/section.js . inside said file use the __sfc__ shortcut (__StatelessFunctionalComponent__) to create a function that then exports the files to the __App.js__ which gets rendered by the __Index.js__ inside the HTML.   
 
-* ## useState   
+* ## useState hook 
 Honestly this one gave me a little trouble.   
 So to use a useState hook you first import it like this   
 `import {useState} from "react"`
@@ -26,3 +26,6 @@ This feature is used to update variables using the deconstructor method like so
 `<button onClick={changeAge}`
 
 This will update any dynamic Value used.
+
+* ## React Dev Tools   
+This allows you to see components with needing to console log your info ... may need to look more into this :) 
