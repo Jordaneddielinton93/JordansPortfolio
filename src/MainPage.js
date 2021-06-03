@@ -32,7 +32,6 @@ const MainPage = () => {
   return ( 
 
     <main className="main" id="set-height">
-
      <Section1/>
      <Section2/>
      <section className="main__section3"></section>
