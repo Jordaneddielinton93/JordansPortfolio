@@ -12,6 +12,14 @@ const TopNavBar = () => {
     e.target.style.transition = "0.5s"
   }
 
+  let myId = "1375399596625694721"
+
+  async function getLatestTweet(){
+    const response = await fetch(`https://api.twitter.com/2/tweets/:id=${myId}`);
+    const data = response.json()
+    console.log(data)
+  }
+
   return ( 
     <nav className="nav">
       <div className="nav__logo" >JordLint</div>

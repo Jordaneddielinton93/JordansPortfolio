@@ -27,8 +27,8 @@ const MainPage = () => {
       logo.innerText = "JordLint"
       empty.style.width = `75%`
     }
-    
     })
+    
   return ( 
 
     <main className="main" id="set-height">
