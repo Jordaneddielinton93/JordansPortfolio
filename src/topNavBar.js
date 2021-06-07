@@ -25,7 +25,7 @@ const TopNavBar = () => {
       <div className="nav__logo" >JordLint</div>
       <div className="nav__empty"></div>
       <div className="nav__menu" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>Menu</div>
-      <div className="nav__profile"><i className="fas fa-user-tie"></i></div>
+      <div className="nav__profile"><i className="fas fa-user-astronaut"></i></div>
 
     </nav>
    );

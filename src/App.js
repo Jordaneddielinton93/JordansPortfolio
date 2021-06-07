@@ -1,5 +1,6 @@
 import {useState} from "react"
 import './styles/App.css';
+import "./styles/popMenu.css"
 import PopupMenu from './PopupMenu';
 import TopNavBar from "./topNavBar"
 import Sidebar from "./Sidebar"
@@ -12,7 +13,6 @@ function App() {
   const [width,getwidth] = useState(false)
   return (
     <div className="App">
-      
       <TopNavBar/>
       <Sidebar width={width} getwidth={getwidth}/>
       <MainPage/>
