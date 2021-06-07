@@ -1,0 +1,92 @@
+.PopupMenuOpen {
+  position: fixed;
+  left: 5vw;
+  bottom: 0;
+  width: 95%;
+  height: 90vh;
+  background-image: -webkit-gradient(linear, left top, right top, from(#464646), to(#fafafa));
+  background-image: linear-gradient(90deg, #464646 0%, #fafafa 100%);
+  z-index: 9;
+  -webkit-transition: 0.9s ease-out;
+  transition: 0.9s ease-out;
+}
+
+.PopupMenuOpen__topHalfOpen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  height: 50%;
+  color: #FAFAFA;
+  background-color: black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.PopupMenuOpen__topHalfOpen--text {
+  -webkit-transition-delay: 3s;
+          transition-delay: 3s;
+  font-size: 2rem;
+  color: paleturquoise;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.PopupMenuOpen__bottomHalfOpen {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background: url(/src/images/bottle.jpg);
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: 0.7s ease-out;
+  transition: 0.7s ease-out;
+  -webkit-transition-delay: 1.7s;
+          transition-delay: 1.7s;
+}
+
+.PopupMenuClosed {
+  position: fixed;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  width: 0%;
+  height: 90vh;
+  bottom: 0;
+  opacity: 1;
+  z-index: 9;
+  background-image: -webkit-gradient(linear, left top, right top, from(#464646), to(#fafafa));
+  background-image: linear-gradient(90deg, #464646 0%, #fafafa 100%);
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+.PopupMenuClosed__topHalfClosed {
+  -webkit-transition: 0.7s ease-out;
+  transition: 0.7s ease-out;
+  height: 0%;
+}
+
+.PopupMenuClosed__topHalfClosed--text {
+  display: none;
+  font-size: 0rem;
+}
+
+.PopupMenuClosed__bottomHalfClosed {
+  background: url(/src/images/bottle.jpg);
+  -webkit-transition: 0.9s ease-out;
+  transition: 0.9s ease-out;
+  position: absolute;
+  bottom: 0;
+  height: 0%;
+}
+/*# sourceMappingURL=popMenu.css.map */

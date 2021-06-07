@@ -1,8 +1,7 @@
-import PopupMenu from "./PopupMenu.js";
+
 
 const Sidebar = ({width,getwidth}) => {
 
-  
   function changeWidth() {
     width===true ? getwidth(false): getwidth(true);
   }

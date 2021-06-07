@@ -1,0 +1,68 @@
+$Lgrey:#464646;
+$FontColor:#FAFAFA;
+
+.PopupMenuOpen{
+  position: fixed;
+  left: 5vw;
+  bottom: 0;
+  width: 95%;
+  height: 90vh;
+  background-image: linear-gradient(90deg, #464646 0%, #fafafa 100%);
+  z-index: 9;
+  transition: 0.9s ease-out;
+  &__topHalfOpen{
+    display: flex;
+    width: 100%;
+    transition:0.7s ease-in-out;
+    transition-delay: 1s;
+    height: 50%;
+    color: $FontColor;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    &--text{
+      transition-delay: 3s;
+      font-size: 2rem;
+      color: paleturquoise;
+      display: flex;
+    }
+  }
+  &__bottomHalfOpen{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background: url(/src/images/bottle.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 0.7s ease-out;
+    transition-delay: 1.7s;
+
+  }
+}
+.PopupMenuClosed{
+  position: fixed;
+  transition: 0.9s;
+  width: 0%;
+  height: 90vh;
+  bottom: 0;
+  opacity: 1;
+  z-index: 9;
+  background-image: linear-gradient(90deg, #464646 0%, #fafafa 100%);
+  transition-delay: 1s;
+  &__topHalfClosed{
+    transition: 0.7s ease-out;
+    height: 0%;
+    &--text{
+      display: none;
+      font-size: 0rem;
+    }
+  }
+  &__bottomHalfClosed{
+    background: url(/src/images/bottle.jpg);
+    transition: 0.9s ease-out;
+    position: absolute;
+    bottom: 0;
+    height: 0%;
+  }
+}

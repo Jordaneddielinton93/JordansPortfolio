@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  cursor: url(/src/images/click.png),pointer ;
   &::-webkit-scrollbar{
     width: 10px;
     background-color: #F5F5F5;
@@ -29,17 +30,8 @@ $FontColor:#FAFAFA;
   display: flex;
   flex-direction: column;
   
-  
 }
-.PopupMenu{
-  position: fixed;
-  left: 5vw;
-  bottom: 0;
-  width: 95vw;
-  height: 90vh;
-  background-color: #1a1a1a;
-  z-index: 100;
-}
+
 .nav{
   z-index: 11;
   position: fixed;
@@ -80,10 +72,14 @@ $FontColor:#FAFAFA;
     width: 10%;
     height: 100%;
     border-left: thin solid $Lgrey;
-    color: $FontColor;
-    &:hover{
+    color:$FontColor;
+    font-size: 2rem;
+    transition: 2s;
+    &:hover .fa-user-astronaut{
+      transition: 2s;
+      transform: rotate(360deg);
       color: red;
-      border-bottom: thin white solid;
+      font-size: 3rem; 
     }
   }
 }
@@ -108,8 +104,8 @@ $FontColor:#FAFAFA;
     padding: 15px;
     transition: 1s;
     width: 100px;
+    z-index: 20;
     &:hover{
-      cursor: pointer;
       transform: rotate(0deg) translateX(20px);
       padding-left: 50px;
       padding-right: 0;
@@ -118,6 +114,7 @@ $FontColor:#FAFAFA;
       float:right;
       transition: 1s;
       color: red;
+      
     }
   }
 }
@@ -182,7 +179,7 @@ $FontColor:#FAFAFA;
     &__heading{
       @include centeritems();
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: start;
       align-items: center;
       position: absolute;
       height: 100%;
@@ -194,14 +191,15 @@ $FontColor:#FAFAFA;
         flex-direction:column;
         &--text{
           position: relative;
-          font-size: 2.4rem;
+          font-size: 5.4rem;
           text-shadow: #CCCCCC 20px;
           line-height: 60px;
           z-index: 9;
-          width: 80%;
+          width: 90%;
           height: 100%;
-          @include centeritems();
-          align-items: center;
+          justify-content: left;
+
+  
         }
         &--text2{
           z-index: 1;
@@ -217,7 +215,7 @@ $FontColor:#FAFAFA;
           
         }
         &--h3{
-          width: 50%;
+          width: 100%;
           float: right;
         }
       }

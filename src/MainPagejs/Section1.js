@@ -1,4 +1,4 @@
-import triedtest from "../images/triedtest.mp4"
+import triedtest from "../images/triedtest1.mp4"
 const Section1 = () => {
 
   let frameNumber = 0,
@@ -13,43 +13,48 @@ const Section1 = () => {
     "Bootstrap",
     "changehere"
   ]
+
+  let language = listOfLanguages[0]
   function ChangeLanguages(){
+    
     listOfLanguages.forEach((letter, i) => {
       setTimeout(() => {
-        let getLang = document.querySelector(".language")
-        getLang.innerText = letter
-        if(letter == "changehere"){
-          ChangeLanguages()
-        }
-        switch (letter) {
-          case "HTML":
-            getLang.style.color = "orange"
-            break;
-          case "CSS":
-            getLang.style.color = "blue"
-            break;
-          case "SASS":
-            getLang.style.color = "pink"
-            break;
-          case "JavaScript":
-            getLang.style.color = "yellow"
-            break;
-          case "REACT":
-            getLang.style.color = "lightblue"
-            // getLang.innerHTML+= <i className="fab fa-react"></i>
-            
-            break;
-          case "Bootstrap":
-            getLang.style.color = "blue"
-            break;
         
-          default:
-            break;
-        }
+        
+        language = letter
+        // if(letter == "changehere"){
+        //   ChangeLanguages()
+        // }
+        // switch (letter) {
+        //   case "HTML":
+        //     getLang.style.color = "orange"
+        //     break;
+        //   case "CSS":
+        //     getLang.style.color = "blue"
+        //     break;
+        //   case "SASS":
+        //     getLang.style.color = "pink"
+        //     break;
+        //   case "JavaScript":
+        //     getLang.style.color = "yellow"
+        //     break;
+        //   case "REACT":
+        //     getLang.style.color = "lightblue"
+        //     // getLang.innerHTML+= <i className="fab fa-react"></i>
+            
+        //     break;
+        //   case "Bootstrap":
+        //     getLang.style.color = "blue"
+        //     break;
+        
+        //   default:
+        //     break;
+        // }
         
       }, i * 2000);
     });
   }
+
   ChangeLanguages()
 
   
@@ -71,7 +76,7 @@ const Section1 = () => {
         <h1 className="main__section1__heading--text">
           Hi! im Jordan <br />
            A web developer who spend's his whole day, practically everyday, experimenting with.
-             <div className="language"></div>
+             <div className="language">{language}</div>
  
         </h1>
       </div> 

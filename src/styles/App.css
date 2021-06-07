@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  cursor: url(/src/images/click.png), pointer;
 }
 
 *::-webkit-scrollbar {
@@ -29,16 +30,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.PopupMenu {
-  position: fixed;
-  left: 5vw;
-  bottom: 0;
-  width: 95vw;
-  height: 90vh;
-  background-color: #1a1a1a;
-  z-index: 100;
 }
 
 .nav {
@@ -123,11 +114,18 @@
   height: 100%;
   border-left: thin solid #464646;
   color: #FAFAFA;
+  font-size: 2rem;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
-.nav__profile:hover {
+.nav__profile:hover .fa-user-astronaut {
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
   color: red;
-  border-bottom: thin white solid;
+  font-size: 3rem;
 }
 
 .aside {
@@ -168,10 +166,10 @@
   -webkit-transition: 1s;
   transition: 1s;
   width: 100px;
+  z-index: 20;
 }
 
 .aside--h2:hover {
-  cursor: pointer;
   -webkit-transform: rotate(0deg) translateX(20px);
           transform: rotate(0deg) translateX(20px);
   padding-left: 50px;
@@ -304,9 +302,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   align-items: center;
   position: absolute;
   height: 100%;
@@ -333,22 +331,15 @@
 
 .main__section2__heading__para--text {
   position: relative;
-  font-size: 2.4rem;
+  font-size: 5.4rem;
   text-shadow: #CCCCCC 20px;
   line-height: 60px;
   z-index: 9;
-  width: 80%;
+  width: 90%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 
 .main__section2__heading__para--text2 {
@@ -364,7 +355,7 @@
 }
 
 .main__section2__heading__para--h3 {
-  width: 50%;
+  width: 100%;
   float: right;
 }
 
