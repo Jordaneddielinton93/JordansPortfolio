@@ -163,16 +163,42 @@ $FontColor:#FAFAFA;
         width: 50%;
         @include centeritems();
         flex-direction:column;
-        & div{
+        & .html{
           list-style: none;
           width: 50%;
           color: orange;
+        }
+        & .css{
+          list-style: none;
+          width: 50%;
+          color: blue;
+        }
+        & .sass{
+          list-style: none;
+          width: 50%;
+          color: pink;
+        }
+        & .javascript{
+          list-style: none;
+          width: 50%;
+          color: yellow;
+        }
+        & .react{
+          list-style: none;
+          width: 50%;
+          color: lightblue;
+        }
+        & .bootstrap{
+          list-style: none;
+          width: 50%;
+          color: rgb(43, 91, 248);
         }
       }
     }
   }
   &__section2{
     background-image: linear-gradient(135deg,#1a1a1a 0%, #1a1a1af8 46%, #1a1a1af6 100% );
+    
     @include centeritems();
     border-top: solid thin $Lgrey;
     margin-left:5vw ;
@@ -183,8 +209,16 @@ $FontColor:#FAFAFA;
       align-items: center;
       position: absolute;
       height: 100%;
-      width: 90%;
+      width: 93%;
+      &__folder{
+        width: 100%;
+        height: 100%;
+        background: url(/src/images/undraw_Resume_folder_re_e0bi.png) no-repeat;
+        background-size: contain;
+
+      }
       &__para{
+        position: absolute;
         z-index: 2;
         width: 100%;
         @include centeritems();
@@ -200,23 +234,6 @@ $FontColor:#FAFAFA;
           justify-content: left;
 
   
-        }
-        &--text2{
-          z-index: 1;
-          position: absolute;
-          text-align: right;
-          float: right;
-          width: 30%;
-          height: 60%;
-          background: url(/src/images/code.jpg) no-repeat;
-          background-size: cover;
-          border-right: solid thick white;
-          
-          
-        }
-        &--h3{
-          width: 100%;
-          float: right;
         }
       }
     }
