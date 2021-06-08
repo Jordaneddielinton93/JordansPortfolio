@@ -22,7 +22,7 @@ const TopNavBar = () => {
 
   return ( 
     <nav className="nav">
-      <div className="nav__logo" >JordLint</div>
+      <div className="nav__logo" >JordLinton</div>
       <div className="nav__empty"></div>
       <div className="nav__menu" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>Menu</div>
       <div className="nav__profile"><i className="fas fa-user-astronaut"></i></div>

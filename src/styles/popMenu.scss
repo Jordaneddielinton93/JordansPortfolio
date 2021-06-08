@@ -1,6 +1,10 @@
 $Lgrey:#464646;
 $FontColor:#FAFAFA;
-
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
 .PopupMenuOpen{
   position: fixed;
   left: 5vw;
@@ -9,22 +13,50 @@ $FontColor:#FAFAFA;
   height: 90vh;
   background-image: linear-gradient(90deg, #464646 0%, #fafafa 100%);
   z-index: 9;
-  transition: 0.9s ease-out;
+  transition: 0.9s ease-in-out;
   &__topHalfOpen{
     display: flex;
     width: 100%;
-    transition:0.7s ease-in-out;
-    transition-delay: 1s;
+    transition:0.5s ease-out;
+    transition-delay: 0.9s;
     height: 50%;
     color: $FontColor;
     background-color: black;
     justify-content: center;
     align-items: center;
     &--text{
-      transition-delay: 3s;
-      font-size: 2rem;
+      transition-delay: 2s;
+      transition: 3s, opacity 1;
+      font-size: 1rem;
       color: paleturquoise;
       display: flex;
+      height: 100%;
+      width: 50%;
+      & form{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+        & textarea{
+          width: 100%;
+          height: 40%;
+          text-align: center;
+          font-size: 1rem;
+        }
+        & input{
+          text-align: center;
+          height: 20%;
+          font-size: 1rem;
+        }
+        & button{
+          text-align: center;
+          height: 20%;
+          background-color: paleturquoise;
+          cursor: pointer;
+        }
+      }
     }
   }
   &__bottomHalfOpen{
@@ -36,7 +68,7 @@ $FontColor:#FAFAFA;
     background-size: cover;
     background-position: center;
     transition: 0.7s ease-out;
-    transition-delay: 1.7s;
+    transition-delay: 1.3s;
 
   }
 }
@@ -49,18 +81,18 @@ $FontColor:#FAFAFA;
   opacity: 1;
   z-index: 9;
   background-image: linear-gradient(90deg, #464646 0%, #fafafa 100%);
-  transition-delay: 1s;
+  transition-delay: 0.5s;
   &__topHalfClosed{
     transition: 0.7s ease-out;
     height: 0%;
     &--text{
-      display: none;
-      font-size: 0rem;
+      opacity: 0;
+      color: black;
     }
   }
   &__bottomHalfClosed{
     background: url(/src/images/bottle.jpg);
-    transition: 0.9s ease-out;
+    transition: 0.9s ease-in-out;
     position: absolute;
     bottom: 0;
     height: 0%;

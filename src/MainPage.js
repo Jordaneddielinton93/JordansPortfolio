@@ -20,11 +20,15 @@ const MainPage = () => {
       logo.style.transition = `1s`
       logo.style.width = `5%`
       logo.innerText = "JL"
+      logo.style.backgroundColor="white"
+      logo.style.color="#464646"
       empty.style.width = `65%`
     }else{
+      logo.style.backgroundColor="#464646"
       logo.style.transition = `1s`
       logo.style.width = `15%`
-      logo.innerText = "JordLint"
+      logo.style.color="white"
+      logo.innerText = "JordLinton"
       empty.style.width = `75%`
     }
     })

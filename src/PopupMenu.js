@@ -23,7 +23,16 @@ const PopupMenu = ({width}) => {
   return ( 
     <div className={popUpContainer}>
       <div className={TophalfofPopup}>
-        <h2 className={TopHalfText}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quis fugiat itaque doloremque reiciendis quas nulla cumque, possimus architec</h2>
+        <h2 className={TopHalfText}>
+          <form action="https://formsubmit.co/27349118230b4e3485bd1f210c8efaa9" method="POST" >
+            <textarea type="text" name="message" required placeholder="message" rows="4" cols="50"/>
+            <input type="email" name="email" required placeholder="Your Email"/>
+            
+            <input type="hidden" name="_next" value="#"></input>
+            <input type="hidden" name="_captcha" value="false"></input>
+            <button type="submit">Send</button>
+          </form>
+        </h2>
       </div>
       <div className={BottomHalfPopup}></div>
     </div>

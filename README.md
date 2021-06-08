@@ -29,3 +29,6 @@ This will update any dynamic Value used.
 
 * ## React Dev Tools   
 This allows you to see components with needing to console log your info ... may need to look more into this :) 
+
+* ## React Dom / not dom
+so basically dont use the dom use the virtual dom no more queryselector just changing classes when you need to tinker with a high,width,opacity and other things 
