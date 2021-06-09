@@ -38,10 +38,11 @@
 }
 
 .PopupMenuOpen__topHalfOpen--text {
+  -webkit-transition: 3s;
+  transition: 3s;
   -webkit-transition-delay: 2s;
           transition-delay: 2s;
-  -webkit-transition: 3s, opacity 1;
-  transition: 3s, opacity 1;
+  opacity: 1;
   font-size: 1rem;
   color: paleturquoise;
   display: -webkit-box;
