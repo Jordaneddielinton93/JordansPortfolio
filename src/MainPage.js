@@ -9,7 +9,7 @@ const MainPage = () => {
     let empty = document.querySelector(".nav__empty")
     let text = document.querySelector(".main__section1__heading")
     let picture = document.querySelector(".main__section1--video")
-    let section2 = document.querySelector(".main__section2__heading__para--text")
+    let section2 = document.querySelector(".section2__heading__para--text")
     var scroll = window.scrollY;
     
     console.log(scroll)

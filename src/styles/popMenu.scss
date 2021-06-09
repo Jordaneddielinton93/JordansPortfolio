@@ -25,8 +25,9 @@ $FontColor:#FAFAFA;
     justify-content: center;
     align-items: center;
     &--text{
+      transition: 3s;
       transition-delay: 2s;
-      transition: 3s, opacity 1;
+      opacity: 1;
       font-size: 1rem;
       color: paleturquoise;
       display: flex;
