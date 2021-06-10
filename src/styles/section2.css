@@ -159,18 +159,23 @@
           flex-direction: column;
 }
 
+.section2__heading__para--underline {
+  position: absolute;
+  left: 1vw;
+  text-align: left;
+  border-bottom: solid thick paleturquoise;
+  width: 30%;
+}
+
 .section2__heading__para--text {
   text-align: left;
   color: paleturquoise;
   position: relative;
   font-size: 5.4rem;
   text-shadow: #CCCCCC 20px;
-  line-height: 60px;
   z-index: 9;
   width: 90%;
   height: 100%;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  cursor: pointer;
 }
 /*# sourceMappingURL=section2.css.map */
