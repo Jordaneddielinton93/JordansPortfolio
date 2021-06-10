@@ -10,18 +10,22 @@ const Section2 = () => {
       case "one":
         setDisplay("section2__heading__folder__screen--content1")
         setLinks("https://lordofthepokeballwars.netlify.app/")
+        setProjectName("GroupProject")
         break;
       case "two":
         setDisplay("section2__heading__folder__screen--content2")
         console.log("hi")
+        setProjectName("Resturant")
         break;
       case "three":
         setDisplay("section2__heading__folder__screen--content3")
         console.log("hi")
+        setProjectName("ShoppingList")
         break;
       case "four":
         setDisplay("section2__heading__folder__screen--content4")
         console.log("hi")
+        setProjectName("Lorem")
         break;
         
       default:
@@ -50,6 +54,7 @@ const Section2 = () => {
 
          </main>
          <div className="section2__heading__para">
+           <div className="section2__heading__para--underline"></div>
           <a className="section2__heading__para--text" href={links}>
           {projectName}
           </a>

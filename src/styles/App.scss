@@ -54,8 +54,19 @@ $FontColor:#FAFAFA;
     color: $FontColor;
   }
   &__empty{
+    display: flex;
     width: 55%;
     height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    & a{
+      color:$FontColor;
+    }
+    & i:hover{
+      color: paleturquoise;
+      cursor: pointer;
+    }
+    
   }
   &__menu{
     @include centeritems();
