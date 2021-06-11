@@ -1,12 +1,22 @@
+import {useState} from "react"
+
 
 import triedtest from "../images/triedtest1.mp4"
-const Section1 = ({loopcall}) => {
+const Section1 = () => {
+
+
 
   let frameNumber = 0,
   playbackConst = 80;
+
+
+
+  
+let lang = "HTML"
+
+
   
   
- let lang = "apple"
 
      return(
       <section className="main__section1">

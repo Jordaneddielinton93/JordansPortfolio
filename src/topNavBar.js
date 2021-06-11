@@ -25,7 +25,7 @@ const TopNavBar = () => {
       <div className="nav__logo" >JordLinton</div>
       <div className="nav__empty">
          <a href="https://github.com/Jordaneddielinton93"><i className="fab fa-github"></i></a>
-         <a href="www.linkedin.com/in/jordan-linton-38541820a"><i className="fab fa-linkedin"></i></a>
+         <a href="https://www.linkedin.com/in/jordan-linton-38541820a"><i className="fab fa-linkedin"></i></a>
          <a href="https://twitter.com/JordanLinton93"><i className="fab fa-twitter"></i></a>
       </div>
       <div className="nav__menu" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>Menu</div>
