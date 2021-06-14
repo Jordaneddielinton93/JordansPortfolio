@@ -9,6 +9,7 @@ $FontColor:#FAFAFA;
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 .section2{
   background: #1a1a1a;
@@ -35,20 +36,34 @@ $FontColor:#FAFAFA;
         height: 10%;
         
         &--h1{
+          display: flex;
+          align-items: center;
+          justify-content: center;
           width: 100%;
-          height: 80%;
-          background-color: $FontColor;
+          height: 70%;
           border-top-right-radius: 20px;
           border-top:$FontColor thin solid ;
           color: $Lgrey;
+          background-image: linear-gradient(to right, #304352 0%, #d7d2cc  51%, #304352  100%);
+          background-size: 200% auto;
+          transition: 0.5s;
           &:hover{
-            background-color:paleturquoise ;
+            box-shadow: 0 0 20px #eee;
+            background-image: linear-gradient(to right, paleturquoise 0%, #d7d2cc  51%, #304352  100%);
+            background-position: center;
+            color: red;
             height: 85%;
           }
           &:nth-child(1){
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bolder;
             height: 100%;
-            color: paleturquoise;
-            background-color:#272727 ;
+            font-size: 2rem;
+            color: red;
+            box-shadow: 0 0 20px #eee;
+            background-position: center;
+            background-image: linear-gradient(to right, paleturquoise 0%, #d7d2cc  51%, #304352  100%);
             border-top-left-radius: 20px;
             border-left: $FontColor thin solid;
           }
@@ -105,13 +120,6 @@ $FontColor:#FAFAFA;
       width: 100%;
       @include centeritems();
       flex-direction:column;
-      &--underline{
-        position: absolute;
-        left: 1vw;
-        text-align: left;
-        border-bottom: solid thick paleturquoise;
-        width: 30%;
-      }
       &--text{
         text-align: left;
         color:paleturquoise ;

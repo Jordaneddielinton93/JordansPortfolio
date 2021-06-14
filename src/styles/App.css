@@ -55,10 +55,6 @@
   background-color: rgba(26, 26, 26, 0.9);
 }
 
-.nav:hover {
-  border-bottom: thin solid white;
-}
-
 .nav__logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -87,13 +83,23 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  opacity: 0.5;
+}
+
+.nav__empty:hover {
+  opacity: 1;
 }
 
 .nav__empty a {
   color: #FAFAFA;
+  width: 10%;
 }
 
 .nav__empty i:hover {
+  opacity: 1.5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 2.3rem;
   color: paleturquoise;
   cursor: pointer;
 }
@@ -186,11 +192,13 @@
   transition: 1s;
   width: 100px;
   z-index: 20;
+  opacity: 0.5;
 }
 
 .aside--h2:hover {
   -webkit-transform: rotate(0deg) translateX(20px);
           transform: rotate(0deg) translateX(20px);
+  opacity: 1;
   padding-left: 50px;
   padding-right: 0;
   border: thin solid #FAFAFA;
@@ -199,6 +207,8 @@
   -webkit-transition: 1s;
   transition: 1s;
   color: red;
+  -webkit-box-shadow: 0 0 20px #eee;
+          box-shadow: 0 0 20px #eee;
 }
 
 .main {
@@ -287,40 +297,80 @@
           flex-direction: column;
 }
 
-.main__section1__heading--text .html {
+.main__section1__heading--text li {
   list-style: none;
-  width: 50%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.main__section1__heading--text .HTML {
   color: orange;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
-.main__section1__heading--text .css {
-  list-style: none;
-  width: 50%;
+.main__section1__heading--text .Css {
   color: blue;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
-.main__section1__heading--text .sass {
-  list-style: none;
-  width: 50%;
+.main__section1__heading--text .Sass {
   color: pink;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
-.main__section1__heading--text .javascript {
-  list-style: none;
-  width: 50%;
+.main__section1__heading--text .JavaScript {
   color: yellow;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
-.main__section1__heading--text .react {
-  list-style: none;
-  width: 50%;
+.main__section1__heading--text .React {
   color: lightblue;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .main__section1__heading--text .bootstrap {
-  list-style: none;
-  width: 50%;
   color: #2b5bf8;
+}
+
+.main__section1__heading h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  height: 80px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main__section1__heading h2 button {
+  background-image: -webkit-gradient(linear, left top, right top, from(#304352), color-stop(51%, #d7d2cc), to(#304352));
+  background-image: linear-gradient(to right, #304352 0%, #d7d2cc 51%, #304352 100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  -webkit-box-shadow: 0 0 20px #eee;
+          box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  font-size: 1rem;
+}
+
+.main__section1__heading h2 button:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
 
 .main__section3 {
