@@ -24,9 +24,10 @@ const TopNavBar = () => {
     <nav className="nav">
       <div className="nav__logo" >JordLinton</div>
       <div className="nav__empty">
-         <a href="https://github.com/Jordaneddielinton93"><i className="fab fa-github"></i></a>
-         <a href="https://www.linkedin.com/in/jordan-linton-38541820a"><i className="fab fa-linkedin"></i></a>
-         <a href="https://twitter.com/JordanLinton93"><i className="fab fa-twitter"></i></a>
+        <a href="https://www.youtube.com/channel/UCDxWVy1PYe_-Bnvdxm23s8w" target="_blank" rel="noreferrer"><i class="fab fa-youtube" ></i></a>
+         <a href="https://github.com/Jordaneddielinton93" target="_blank" rel="noreferrer"><i className="fab fa-github"></i></a>
+         <a href="https://www.linkedin.com/in/jordan-linton-38541820a" target="_blank" rel="noreferrer"><i className="fab fa-linkedin"></i></a>
+         <a href="https://twitter.com/JordanLinton93" target="_blank" rel="noreferrer"><i className="fab fa-twitter"></i></a>
       </div>
       <div className="nav__menu" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>Menu</div>
       <div className="nav__profile"><i className="fas fa-user-astronaut"></i></div>

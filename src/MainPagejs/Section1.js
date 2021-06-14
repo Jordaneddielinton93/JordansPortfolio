@@ -1,22 +1,33 @@
-import {useState} from "react"
+import {useState,useEffect} from "react"
 
 
 import triedtest from "../images/triedtest1.mp4"
 const Section1 = () => {
 
-
-
+  let languages = ["HTML","Css","JavaScript","React","Sass"]
+  let lanIcons = ["fab fa-html5","fab fa-css3","fab fa-js-square","fab fa-react","fab fa-sass"]
   let frameNumber = 0,
   playbackConst = 80;
 
+  let [lang,setLang]= useState("HTML")
+  let [icons,setIcons]= useState("fab fa-html5")
+
+  useEffect(() => {
+    let counter = 0
+    const timer = setInterval(() => {
+      setIcons(lanIcons[counter])
+      setLang(languages[counter])
+      counter++;
+      if(counter > languages.length-1){
+        counter=0
+      }
+    }, 2000);
+    
+    return () => clearTimeout(timer);
+  }, []);
 
 
-  
-let lang = "HTML"
 
-
-  
-  
 
      return(
       <section className="main__section1">
@@ -36,9 +47,14 @@ let lang = "HTML"
         <h1 className="main__section1__heading--text">
           Hi! im Jordan <br />
            A web developer who spend's his whole day, practically everyday, experimenting with.
-             <div className={lang}>{lang}</div>
+             <li className={lang}>{lang} <i className={icons}></i></li>
+             
  
         </h1>
+        <h2>
+          <button>More ABOUT ME !!</button>
+        </h2>
+        
       </div> 
     </section>
      )

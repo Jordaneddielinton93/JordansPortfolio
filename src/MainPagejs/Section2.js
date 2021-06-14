@@ -39,7 +39,7 @@ const Section2 = () => {
        <div className="section2__heading">
          <main className="section2__heading__folder">
            <header className="section2__heading__folder__header">
-              <h2 className="section2__heading__folder__header--h1">On Display</h2>
+              <a className="section2__heading__folder__header--h1"  href={links} target="_blank" rel="noreferrer">Click To Vist</a>
               <h2 className="section2__heading__folder__header--h1" onClick={()=>changedisplay("one")}>GroupProject</h2>
               <h2 className="section2__heading__folder__header--h1" onClick={()=>changedisplay("two")}>ResturantApp</h2>
               <h2 className="section2__heading__folder__header--h1" onClick={()=>changedisplay("three")}>ShoppingList</h2>
@@ -47,17 +47,15 @@ const Section2 = () => {
               
            </header>
            <div className="section2__heading__folder__screen">
-              <div className={screenDisplay}>
+              <div className={screenDisplay} role="img" aria-label="[image of projects]">
 
               </div>
            </div>
 
          </main>
          <div className="section2__heading__para">
-           <div className="section2__heading__para--underline"></div>
-          <a className="section2__heading__para--text" href={links}>
-          {projectName}
-          </a>
+           
+          <h1 className="section2__heading__para--text">Project</h1>
           
          </div>
          
