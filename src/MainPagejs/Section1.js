@@ -3,14 +3,54 @@ import {useState,useEffect} from "react"
 
 import triedtest from "../images/triedtest1.mp4"
 const Section1 = () => {
-
-  let languages = ["HTML","Css","JavaScript","React","Sass"]
-  let lanIcons = ["fab fa-html5","fab fa-css3","fab fa-js-square","fab fa-react","fab fa-sass"]
   let frameNumber = 0,
   playbackConst = 80;
 
+  
+
+  
+  let languages = ["HTML","Css","JavaScript","React","Sass"]
+  let lanIcons = ["fab fa-html5","fab fa-css3","fab fa-js-square","fab fa-react","fab fa-sass"]
+  
+
+
   let [lang,setLang]= useState("HTML")
   let [icons,setIcons]= useState("fab fa-html5")
+  let [shownlang,setShownLang] = useState("flex")
+  let [langCounter,setLangCounter] = useState(1)
+
+
+  let arrayAboutMe = [
+
+  <>Hi! im Jordan <br/> A web developer who spend's his whole day, practically everyday, experimenting with.</>,
+
+  <>A real passion!!<br/>for making beautiful responsive websites and web applications. As well as youtube videos and coding challenges.</>,
+
+  <>I tend to work harder then is needed with a strong aptitude towards tech...<br/>Oh and i live for iced coffee ;)</>
+  ]
+
+
+  let [text1,setText1]= useState(arrayAboutMe[0])
+
+  
+
+
+  function changeIntroWords(){
+    setLangCounter(langCounter+1)
+    setText1(arrayAboutMe[langCounter]);
+    console.log(langCounter)
+
+    if(langCounter == 0){
+      setShownLang("flex")
+    }else{
+      setShownLang("none")
+    }
+    if(langCounter == arrayAboutMe.length-1){
+      setLangCounter(0)
+    }
+    
+  }
+
 
   useEffect(() => {
     let counter = 0
@@ -23,7 +63,7 @@ const Section1 = () => {
       }
     }, 2000);
     
-    return () => clearTimeout(timer);
+    
   }, []);
 
 
@@ -43,16 +83,18 @@ const Section1 = () => {
          }}>
         <source src={triedtest} type="video/mp4"/>
       </video>
+
+
       <div className="main__section1__heading">
+
         <h1 className="main__section1__heading--text">
-          Hi! im Jordan <br />
-           A web developer who spend's his whole day, practically everyday, experimenting with.
-             <li className={lang}>{lang} <i className={icons}></i></li>
-             
- 
+          
+           {text1}
+             <li className={lang} style={{display:shownlang}}>{lang} <i className={icons}></i></li>
         </h1>
+
         <h2>
-          <button>More ABOUT ME !!</button>
+          <button onClick={changeIntroWords}>More ABOUT ME !!</button>
         </h2>
         
       </div> 
