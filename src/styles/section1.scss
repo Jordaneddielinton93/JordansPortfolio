@@ -53,7 +53,7 @@ $FontColor:#FAFAFA;
         line-height: 60px;
         padding: 90px;
         z-index: 9;
-        width: 50%;
+        width: 60%;
         @include centeritems();
         flex-direction:column;
         
@@ -83,11 +83,17 @@ $FontColor:#FAFAFA;
         }
         & .bootstrap{
           color: rgb(43, 91, 248);
-          
+        }
+        & a{
+          text-align: center;
+          color: yellow;
+          cursor: pointer;
         }
         
       }
       & h2{
+        position: absolute ;
+        bottom: 200px;
         display: flex;
         width: 50%;
         height: 80px;

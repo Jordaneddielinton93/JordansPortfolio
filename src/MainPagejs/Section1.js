@@ -1,5 +1,5 @@
 import {useState,useEffect} from "react"
-
+import SoCLogo from "../images/socLogo.png"
 
 import triedtest from "../images/triedtest1.mp4"
 const Section1 = () => {
@@ -24,9 +24,11 @@ const Section1 = () => {
 
   <>Hi! im Jordan <br/> A web developer who spend's his whole day, practically everyday, experimenting with.</>,
 
-  <>A real passion!!<br/>for making beautiful responsive websites and web applications. As well as youtube videos and coding challenges.</>,
+  <>Experience i hear you ask!<br/><h4><a target="_blank" href="https://www.schoolofcode.com/" rel="noreferrer">The School Of Code Bootcamp</a></h4>Is where knowledge happens!! <img src={SoCLogo} alt="School Of Code"/><h6><q>achieved 85% employment</q></h6> </>,
 
-  <>I tend to work harder then is needed with a strong aptitude towards tech...<br/>Oh and i live for iced coffee ;)</>
+  <>A real passion!!<br/>for making beautiful responsive websites and web applications. As well as youtube videos, coding challenges, python Arduino's and much more.</>
+
+  
   ]
 
 
@@ -94,7 +96,7 @@ const Section1 = () => {
         </h1>
 
         <h2>
-          <button onClick={changeIntroWords}>More ABOUT ME !!</button>
+          <button className={lang} onClick={changeIntroWords}>More ABOUT ME !!</button>
         </h2>
         
       </div> 
@@ -102,5 +104,4 @@ const Section1 = () => {
      )
 
 }
- 
 export default Section1;
