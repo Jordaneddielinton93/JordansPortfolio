@@ -14,11 +14,13 @@ const Section2 = () => {
         break;
       case "two":
         setDisplay("section2__heading__folder__screen--content2")
+        setLinks("https://jordansrecipe.netlify.app/")
         console.log("hi")
         setProjectName("Resturant")
         break;
       case "three":
         setDisplay("section2__heading__folder__screen--content3")
+        setLinks("https://jordsshoppinglist.netlify.app/")
         console.log("hi")
         setProjectName("ShoppingList")
         break;
