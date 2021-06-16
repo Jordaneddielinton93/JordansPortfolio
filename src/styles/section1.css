@@ -69,7 +69,7 @@
   line-height: 60px;
   padding: 90px;
   z-index: 9;
-  width: 50%;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,7 +125,15 @@
   color: #2b5bf8;
 }
 
+.main__section1__heading--text a {
+  text-align: center;
+  color: yellow;
+  cursor: pointer;
+}
+
 .main__section1__heading h2 {
+  position: absolute;
+  bottom: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
