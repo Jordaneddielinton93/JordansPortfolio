@@ -91,37 +91,37 @@ $FontColor:#FAFAFA;
         }
         
       }
-      & h2{
-        position: absolute ;
-        bottom: 200px;
-        display: flex;
-        width: 50%;
-        height: 80px;
-        justify-content: flex-end;
-        
-        & button {
-          background-image: linear-gradient(to right, #304352 0%, #d7d2cc  51%, #304352  100%);
-           margin: 10px;
-           padding: 15px 45px;
-           text-align: center;
-           text-transform: uppercase;
-           transition: 0.5s;
-           background-size: 200% auto;
-           color: white;            
-           box-shadow: 0 0 20px #eee;
-           border-radius: 10px;
-           display: block;
-           font-size: 1rem;
-         }
+    }
+    & h2{
+      position: absolute ;
+      bottom: 100px;
+      display: flex;
+      width: 50%;
+      height: 80px;
+      justify-content: flex-end;
+      
+      & button {
+        background-image: linear-gradient(to right, #304352 0%, #d7d2cc  51%, #304352  100%);
+         margin: 10px;
+         padding: 15px 45px;
+         text-align: center;
+         text-transform: uppercase;
+         transition: 0.5s;
+         background-size: 200% auto;
+         color: white;            
+         box-shadow: 0 0 20px #eee;
+         border-radius: 10px;
+         display: block;
+         font-size: 1rem;
+       }
 
-         & button:hover {
-           background-position: right center; /* change the direction of the change here */
-           color: #fff;
-           text-decoration: none;
-         }
-        
-        
-      }
+       & button:hover {
+         background-position: right center; /* change the direction of the change here */
+         color: #fff;
+         text-decoration: none;
+       }
+      
+      
     }
   }
   &__section3{
