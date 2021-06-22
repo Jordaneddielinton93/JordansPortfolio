@@ -9,12 +9,11 @@ import Sidebar from "./Sidebar"
 import MainPage from "./MainPage"
 
 
-
-
 function App() {
   const [width,getwidth] = useState(false)
   return (
     <div className="App">
+      
       <TopNavBar/>
       <Sidebar width={width} getwidth={getwidth}/>
       <MainPage/>

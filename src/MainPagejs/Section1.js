@@ -95,11 +95,12 @@ const Section1 = () => {
              <li className={lang} style={{display:shownlang}}>{lang} <i className={icons}></i></li>
         </h1>
 
-        <h2>
-          <button className={lang} onClick={changeIntroWords}>More ABOUT ME !!</button>
-        </h2>
+        
         
       </div> 
+      <h2>
+          <button className={lang} onClick={changeIntroWords}>More ABOUT ME !!</button>
+      </h2>
     </section>
      )
 
