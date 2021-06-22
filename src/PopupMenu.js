@@ -34,7 +34,9 @@ const PopupMenu = ({width}) => {
           </form>
         </h2>
       </div>
-      <div className={BottomHalfPopup}></div>
+      <div className={BottomHalfPopup}>
+        <
+      </div>
     </div>
    );
 }
