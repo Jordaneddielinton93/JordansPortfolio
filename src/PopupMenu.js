@@ -35,7 +35,7 @@ const PopupMenu = ({width}) => {
         </h2>
       </div>
       <div className={BottomHalfPopup}>
-        <
+        
       </div>
     </div>
    );
