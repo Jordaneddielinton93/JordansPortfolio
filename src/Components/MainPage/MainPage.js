@@ -1,6 +1,7 @@
 
-import Section1 from "./MainPagejs/Section1"
-import Section2 from "./MainPagejs/Section2"
+import Section1 from ".//Section1/Section1"
+import Section2 from "./Section2/Section2"
+
 
 const MainPage = () => {
   
@@ -12,7 +13,7 @@ const MainPage = () => {
     let section2 = document.querySelector(".section2__heading__para--text")
     var scroll = window.scrollY;
     
-    console.log(scroll)
+    
     text.style.opacity = `${100-(scroll/6)}%`
     picture.style.opacity = `${100-(scroll/5)}%`
     section2.style.bottom = `${-440+(scroll/1.7)}px`

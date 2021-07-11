@@ -83,7 +83,7 @@ $FontColor:#FAFAFA;
         &--content1{
           width: 90%;
           height: 90%;
-          background: url(/src/images/questionPortfolio.png) no-repeat;
+          background: url(./../../../images/TeamProject2.png) no-repeat;
           background-position: center;
           background-size: contain;
           border: $FontColor thin solid;
@@ -91,7 +91,7 @@ $FontColor:#FAFAFA;
         &--content2{
           width: 90%;
           height: 90%;
-          background: url(/src/images/resturant.png) no-repeat;
+          background: url(./../../../images/resturant.png) no-repeat;
           background-position: center;
           background-size: contain;
           border: $FontColor thin solid;
@@ -99,19 +99,21 @@ $FontColor:#FAFAFA;
         &--content3{
           width: 90%;
           height: 90%;
-          background: url(/src/images/shoppinglist.png);
+          background: url(./../../../images/questionPortfolio.png);
           background-position: center;
           background-size: contain;
+          background-repeat: repeat-x;
           border: $FontColor thin solid;
         }
         &--content4{
           width: 90%;
           height: 90%;
-          background: url(/src/images/mountain.jpg);
+          background: url(./../../../images/shoppinglist.png);
           background-position: center;
           background-size: cover;
           border: $FontColor thin solid;
         }
+        
       }
     }
     &__para{
@@ -129,7 +131,7 @@ $FontColor:#FAFAFA;
         z-index: 9;
         width: 90%;
         height: 100%;
-        cursor: pointer;
+        
         
       }
     }

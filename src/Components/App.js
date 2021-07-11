@@ -1,12 +1,10 @@
 import {useState} from "react"
-import './styles/App.css';
-import "./styles/popMenu.css"
-import "./styles/section1.css"
-import "./styles/section2.css"
-import PopupMenu from './PopupMenu';
-import TopNavBar from "./topNavBar"
-import Sidebar from "./Sidebar"
-import MainPage from "./MainPage"
+import './App.scss';
+
+import PopupMenu from './PopupMenu/PopupMenu';
+import TopNavBar from "./NavBars/topNavBar"
+import Sidebar from "./NavBars/Sidebar"
+import MainPage from "./MainPage/MainPage"
 
 
 function App() {

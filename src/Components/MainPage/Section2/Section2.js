@@ -1,3 +1,5 @@
+import "./section2.scss"
+
 import {useState} from "react"
 const Section2 = () => {
   let [screenDisplay,setDisplay] = useState("")
@@ -8,8 +10,9 @@ const Section2 = () => {
     
     switch (params) {
       case "one":
+        
         setDisplay("section2__heading__folder__screen--content1")
-        setLinks("https://lordofthepokeballwars.netlify.app/")
+        setLinks("https://team-grow-pro.netlify.app/")
         setProjectName("GroupProject")
         break;
       case "two":
@@ -20,14 +23,15 @@ const Section2 = () => {
         break;
       case "three":
         setDisplay("section2__heading__folder__screen--content3")
-        setLinks("https://jordsshoppinglist.netlify.app/")
+        setLinks("https://lordofthepokeballwars.netlify.app/")
         console.log("hi")
-        setProjectName("ShoppingList")
+        setProjectName("GroupProject2")
         break;
       case "four":
         setDisplay("section2__heading__folder__screen--content4")
+        setLinks("https://jordsshoppinglist.netlify.app/")
         console.log("hi")
-        setProjectName("Lorem")
+        setProjectName("ShoppingList")
         break;
         
       default:
@@ -42,10 +46,10 @@ const Section2 = () => {
          <main className="section2__heading__folder">
            <header className="section2__heading__folder__header">
               <a className="section2__heading__folder__header--h1"  href={links} target="_blank" rel="noreferrer">Click To Vist</a>
-              <h2 className="section2__heading__folder__header--h1" onClick={()=>changedisplay("one")}>GroupProject</h2>
+              <h2 className="section2__heading__folder__header--h1" onClick={()=>changedisplay("one")}>GroupProject2</h2>
               <h2 className="section2__heading__folder__header--h1" onClick={()=>changedisplay("two")}>ResturantApp</h2>
-              <h2 className="section2__heading__folder__header--h1" onClick={()=>changedisplay("three")}>ShoppingList</h2>
-              <h2 className="section2__heading__folder__header--h1" onClick={()=>changedisplay("four")}>LOREM</h2>
+              <h2 className="section2__heading__folder__header--h1" onClick={()=>changedisplay("three")}>GroupProject1</h2>
+              <h2 className="section2__heading__folder__header--h1" onClick={()=>changedisplay("four")}>ShoppingList</h2>
               
            </header>
            <div className="section2__heading__folder__screen">
@@ -57,7 +61,7 @@ const Section2 = () => {
          </main>
          <div className="section2__heading__para">
            
-          <h1 className="section2__heading__para--text">Project</h1>
+          <h1 className="section2__heading__para--text">{projectName}</h1>
           
          </div>
          

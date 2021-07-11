@@ -1,3 +1,4 @@
+import "./popMenu.scss"
 
 const PopupMenu = ({width}) => {
   
@@ -5,8 +6,9 @@ const PopupMenu = ({width}) => {
   let TophalfofPopup
   let TopHalfText
   let BottomHalfPopup
-
+  let showForm
   if(width){
+    showForm = "flex"
     popUpContainer = "PopupMenuOpen"
     TophalfofPopup="PopupMenuOpen__topHalfOpen"
     TopHalfText = "PopupMenuOpen__topHalfOpen--text"
@@ -14,6 +16,7 @@ const PopupMenu = ({width}) => {
     
     
   }else{
+    showForm = "none"
     popUpContainer = "PopupMenuClosed"
     TophalfofPopup="PopupMenuClosed__topHalfClosed"
     TopHalfText = "PopupMenuClosed__topHalfClosed--text"
@@ -22,9 +25,9 @@ const PopupMenu = ({width}) => {
   
   return ( 
     <div className={popUpContainer}>
-      <div className={TophalfofPopup}>
-        <h2 className={TopHalfText}>
-          <form action="https://formsubmit.co/27349118230b4e3485bd1f210c8efaa9" method="POST" >
+      <div className={TophalfofPopup} >
+        <section className={TopHalfText}>
+          <form action="https://formsubmit.co/27349118230b4e3485bd1f210c8efaa9" method="POST" style={{display:showForm}}>
             <textarea type="text" name="message" required placeholder="message" rows="4" cols="50"/>
             <input type="email" name="email" required placeholder="Your Email"/>
             
@@ -32,7 +35,7 @@ const PopupMenu = ({width}) => {
             <input type="hidden" name="_captcha" value="false"></input>
             <button type="submit">Send</button>
           </form>
-        </h2>
+        </section>
       </div>
       <div className={BottomHalfPopup}>
         

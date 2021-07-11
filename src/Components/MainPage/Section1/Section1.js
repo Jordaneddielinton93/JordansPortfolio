@@ -1,7 +1,9 @@
-import {useState,useEffect} from "react"
-import SoCLogo from "../images/socLogo.png"
+import "./section1.scss"
 
-import triedtest from "../images/triedtest1.mp4"
+import {useState,useEffect} from "react"
+import SoCLogo from "../../../images/socLogo.png"
+
+import triedtest from "../../../images/triedtest1.mp4"
 const Section1 = () => {
   let frameNumber = 0,
   playbackConst = 80;
@@ -9,10 +11,9 @@ const Section1 = () => {
   
 
   
-  let languages = ["HTML","Css","JavaScript","React","Sass"]
-  let lanIcons = ["fab fa-html5","fab fa-css3","fab fa-js-square","fab fa-react","fab fa-sass"]
+  let languages = ["HTML","Css","JavaScript","React","Sass","Jest"]
+  let lanIcons = ["fab fa-html5","fab fa-css3","fab fa-js-square","fab fa-react","fab fa-sass","fas fa-cogs"]
   
-
 
   let [lang,setLang]= useState("HTML")
   let [icons,setIcons]= useState("fab fa-html5")
@@ -40,7 +41,7 @@ const Section1 = () => {
   function changeIntroWords(){
     setLangCounter(langCounter+1)
     setText1(arrayAboutMe[langCounter]);
-    console.log(langCounter)
+    
 
     if(langCounter == 0){
       setShownLang("flex")
