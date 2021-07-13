@@ -99,8 +99,8 @@ const Section1 = () => {
         
         
       </div> 
-      <h2>
-          <button className={lang} onClick={changeIntroWords}>More ABOUT ME !!</button>
+      <h2 className="main__section1__container">
+          <button className="main__section1__container-button" onClick={changeIntroWords}>More ABOUT ME !!</button>
       </h2>
     </section>
      )

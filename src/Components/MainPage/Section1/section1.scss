@@ -29,7 +29,7 @@ $FontColor:#FAFAFA;
     max-height: 100vh;
     min-height: 100vh;
     
-    & video{
+    &--video{
       object-fit: cover;
       min-height: 70%;
       position: absolute;
@@ -92,7 +92,7 @@ $FontColor:#FAFAFA;
         
       }
     }
-    & h2{
+    &__container{
       position: absolute ;
       bottom: 100px;
       display: flex;
@@ -100,7 +100,7 @@ $FontColor:#FAFAFA;
       height: 80px;
       justify-content: flex-end;
       
-      & button {
+      &-button {
         background-image: linear-gradient(to right, #304352 0%, #d7d2cc  51%, #304352  100%);
          margin: 10px;
          padding: 15px 45px;
@@ -127,4 +127,68 @@ $FontColor:#FAFAFA;
   &__section3{
     background-color: rgb(0, 0, 0);
   }
+}
+
+
+
+@media screen and (max-width: 1200px) and (min-width: 500px){ 
+
+  .nav{
+    font-size: 1.2rem;
+  }
+  .nav__logo{
+    font-size: 1rem;
+  }
+  
+  .main__section1__heading--text{
+    font-size: 1.4rem;
+  }
+
+  .main__section1__container{
+    width: 70%;
+  }
+  .main__section1__container-button{
+    padding: 15px 15px;
+  }
+
+
+}
+
+
+
+@media screen and (max-width: 500px){
+
+  .nav{
+    font-size: 1.2rem;
+  }
+  .nav__menu{
+    display: none;
+
+  }
+  .nav__logo{
+    font-size: 0.5rem;
+  }
+  .nav__profile{
+    width: 20%;
+  }
+  
+  .main__section1__heading--text{
+    font-size: 1rem;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 80%;
+  }
+
+  .main__section1__container{
+    width: 70%;
+  }
+  .main__section1__container-button{
+    padding: 15px 15px;
+  }
+
+  .main__section1--video{
+    min-height: 50%;
+  }
+
+  
 }

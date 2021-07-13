@@ -137,3 +137,49 @@ $FontColor:#FAFAFA;
     }
   }
 }
+@media screen and (max-width: 1200px) and (min-width: 500px){ 
+
+  .section2__heading__folder__header--h1:nth-child(1){
+    font-size: 0.9rem;
+  }
+
+  .section2__heading__folder__header--h1{
+    font-size: 0.7rem;
+  }
+  .section2__heading__para--text{
+    font-size: 2rem;
+  }
+
+  
+}
+@media screen and (max-width: 500px){
+  
+  .section2{
+    width: 100%;
+    margin: 0%;
+  }
+
+  .section2__heading__folder__header--h1:nth-child(1){
+    font-size: 0.9rem;
+  }
+
+  .section2__heading__folder__header--h1{
+    font-size: 0.5rem;
+    color: #eee;
+  }
+  .section2__heading__para--text{
+    font-size: 2rem;
+  }
+
+  .section2__heading__folder__screen{
+    height: 70%;
+  }
+  .aside{
+    display: none;
+  }
+  .section2__heading{
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+  }
+}

@@ -82,6 +82,7 @@ $FontColor:#FAFAFA;
     width: 10%;
     height: 100%;
     border-left: thin solid $Lgrey;
+    border-right: thin solid $Lgrey;
     color: $FontColor;
     &:hover{
       color: red;
@@ -92,7 +93,7 @@ $FontColor:#FAFAFA;
     @include centeritems();
     width: 10%;
     height: 100%;
-    border-left: thin solid $Lgrey;
+    
     color:$FontColor;
     font-size: 2rem;
     transition: 2s;
