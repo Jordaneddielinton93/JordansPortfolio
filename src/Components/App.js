@@ -8,6 +8,16 @@ import MainPage from "./MainPage/MainPage"
 
 
 function App() {
+
+
+  function openPopup(params){
+
+  }
+
+
+
+
+
   const [width,getwidth] = useState(false)
   return (
     <div className="App">
