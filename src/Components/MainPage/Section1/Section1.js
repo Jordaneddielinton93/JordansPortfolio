@@ -43,12 +43,12 @@ const Section1 = () => {
     setText1(arrayAboutMe[langCounter]);
     
 
-    if(langCounter == 0){
+    if(langCounter === 0){
       setShownLang("flex")
     }else{
       setShownLang("none")
     }
-    if(langCounter == arrayAboutMe.length-1){
+    if(langCounter === arrayAboutMe.length-1){
       setLangCounter(0)
     }
     
@@ -57,7 +57,7 @@ const Section1 = () => {
 
   useEffect(() => {
     let counter = 0
-    const timer = setInterval(() => {
+    setInterval(() => {
       setIcons(lanIcons[counter])
       setLang(languages[counter])
       counter++;

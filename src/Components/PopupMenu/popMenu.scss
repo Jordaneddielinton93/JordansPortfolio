@@ -99,3 +99,11 @@ $FontColor:#FAFAFA;
     height: 0%;
   }
 }
+
+
+@media screen and (max-width: 500px){
+  .PopupMenuOpen{
+    left: 0%;
+    width: 100vw;
+  }
+}
