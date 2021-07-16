@@ -31,9 +31,7 @@ const PopupMenu = ({width, screenShown}) => {
             <textarea type="text" name="message" required placeholder="message" rows="4" cols="50"/>
             <input type="email" name="email" required placeholder="Your Email"/>
             
-            <input type="hidden" name="_next" value="#"></input>
-            <input type="hidden" name="_captcha" value="false"></input>
-            <input type="hidden" name="_next" value="/"></input>
+            <input type="hidden" name="_next" value="https://jordans-new-portfolio.netlify.app/"></input>
             <button type="submit">Send</button>
           </form>
         </section>
