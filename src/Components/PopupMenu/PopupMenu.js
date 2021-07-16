@@ -27,7 +27,7 @@ const PopupMenu = ({width, screenShown}) => {
     <div className={popUpContainer} >
       <div className={TophalfofPopup} >
         <section className={TopHalfText}>
-          <form action="POST" data-netlify="true" style={{display:showForm}}>
+          <form method="POST" data-netlify="true" name="contact" style={{display:showForm}}>
             <textarea type="text" name="message" required placeholder="message" rows="4" cols="50"/>
             <input type="email" name="email" required placeholder="Your Email"/>
             
