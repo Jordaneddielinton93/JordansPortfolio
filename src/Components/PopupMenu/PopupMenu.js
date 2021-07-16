@@ -30,7 +30,7 @@ const PopupMenu = ({width, screenShown}) => {
           <form method="POST" data-netlify="true" name="contact" style={{display:showForm}}>
             <textarea type="text" name="message" required placeholder="message" rows="4" cols="50"/>
             <input type="email" name="email" required placeholder="Your Email"/>
-            
+            <div data-netlify-recaptcha="true"></div>
             
             
             <button type="submit">Send</button>
