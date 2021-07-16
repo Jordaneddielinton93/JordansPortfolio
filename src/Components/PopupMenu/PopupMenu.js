@@ -27,12 +27,12 @@ const PopupMenu = ({width, screenShown}) => {
     <div className={popUpContainer} >
       <div className={TophalfofPopup} >
         <section className={TopHalfText}>
-          <form action="https://formsubmit.co/27349118230b4e3485bd1f210c8efaa9" method="POST" style={{display:showForm}}>
+          <form action="POST" data-netlify="true" style={{display:showForm}}>
             <textarea type="text" name="message" required placeholder="message" rows="4" cols="50"/>
             <input type="email" name="email" required placeholder="Your Email"/>
             
-            <input type="hidden" name="_next" value="#"></input>
-            <input type="hidden" name="_captcha" value="false"></input>
+            
+            
             <button type="submit">Send</button>
           </form>
         </section>
