@@ -33,6 +33,7 @@ const PopupMenu = ({width, screenShown}) => {
             
             <input type="hidden" name="_next" value="#"></input>
             <input type="hidden" name="_captcha" value="false"></input>
+            <input type="hidden" name="_next" value="/"></input>
             <button type="submit">Send</button>
           </form>
         </section>
