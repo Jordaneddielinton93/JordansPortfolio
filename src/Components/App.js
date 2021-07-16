@@ -11,21 +11,21 @@ function App() {
 
 
   function openPopup(params){
-
+    console.log(params)
+    width===true ? getwidth(false): getwidth(true)
+    setscreenShown(params)
+    console.log(params)
+  
   }
-
-
-
-
-
+  const [screenShown,setscreenShown]= useState()
   const [width,getwidth] = useState(false)
   return (
     <div className="App">
       
       <TopNavBar/>
-      <Sidebar width={width} getwidth={getwidth}/>
+      <Sidebar openPopUp={openPopup}/>
       <MainPage/>
-      <PopupMenu width={width}/>
+      <PopupMenu width={width} screenShown={screenShown} />
     </div>
   );
 }

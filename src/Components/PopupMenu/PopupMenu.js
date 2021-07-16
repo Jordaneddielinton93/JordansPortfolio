@@ -1,6 +1,6 @@
 import "./popMenu.scss"
-
-const PopupMenu = ({width}) => {
+import bottle from "../../images/bottle.jpg"
+const PopupMenu = ({width, screenShown}) => {
   
   let popUpContainer
   let TophalfofPopup
@@ -23,25 +23,44 @@ const PopupMenu = ({width}) => {
     BottomHalfPopup="PopupMenuClosed__bottomHalfClosed"
   }
   
-  return ( 
-    <div className={popUpContainer}>
+  return screenShown==="message"? ( 
+    <div className={popUpContainer} >
       <div className={TophalfofPopup} >
         <section className={TopHalfText}>
-          <form action="https://formsubmit.co/27349118230b4e3485bd1f210c8efaa9" method="POST" style={{display:showForm}}>
+          <form method="POST" data-netlify="true" name="contact" style={{display:showForm}}>
             <textarea type="text" name="message" required placeholder="message" rows="4" cols="50"/>
             <input type="email" name="email" required placeholder="Your Email"/>
             
-            <input type="hidden" name="_next" value="#"></input>
-            <input type="hidden" name="_captcha" value="false"></input>
+            
+            
             <button type="submit">Send</button>
           </form>
         </section>
       </div>
       <div className={BottomHalfPopup}>
-        
+        <img className="bottleImage" src={bottle} alt="" />
+      
       </div>
     </div>
-   );
+   ):<div className={popUpContainer} >
+
+
+
+     <div className={TophalfofPopup} >
+     <section className={TopHalfText}>
+       <h1>Contact Me</h1>
+       <h1>@</h1>
+     </section>
+        
+
+     </div>
+
+     <div className={BottomHalfPopup}>
+
+
+
+     </div>
+   </div>
 }
  
 export default PopupMenu;
