@@ -49,7 +49,7 @@ const PopupMenu = ({width, screenShown}) => {
      <section className={TopHalfText}>
        <h1>Contact Me</h1>
        <h1>@JordanLinton93 <a href="https://twitter.com/JordanLinton93" target="_blank" rel="noreferrer"><i className="fab fa-twitter"></i></a></h1>
-       <h1>Jordaneddielinton93@hotmail.co.uk   <i class="far fa-paper-plane"></i></h1>
+       <h1>Jordaneddielinton93@hotmail.co.uk<i class="far fa-paper-plane"></i></h1>
      </section>
         
 
