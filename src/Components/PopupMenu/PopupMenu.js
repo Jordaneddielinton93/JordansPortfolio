@@ -30,7 +30,7 @@ const PopupMenu = ({width, screenShown}) => {
           <form action="https://formsubmit.co/27349118230b4e3485bd1f210c8efaa9" method="POST" style={{display:showForm}}>
             <textarea type="text" name="message" required placeholder="message" rows="4" cols="50"/>
             <input type="email" name="email" required placeholder="Your Email"/>
-            
+            <input type="hidden" name="_captcha" value="false"></input>
             <input type="hidden" name="_next" value="https://jordans-new-portfolio.netlify.app/"></input>
             <button type="submit">Send</button>
           </form>
