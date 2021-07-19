@@ -1,7 +1,6 @@
 .CardContainer{
   display: flex;
   width: 100%;
-  
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
@@ -9,9 +8,9 @@
     width: 23%;
     height: 300px;
     border: solid 1px rgb(240, 240, 240) ;
-  background-color: white;
-  margin-bottom: 40px;
-  margin-top: 40px;
+    background-color: white;
+    margin-bottom: 40px;
+    margin-top: 40px;
     &:hover{
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   cursor: pointer;
