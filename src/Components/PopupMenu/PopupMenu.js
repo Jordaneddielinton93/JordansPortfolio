@@ -1,13 +1,13 @@
 import "./popMenu.scss"
 import bottle from "../../images/bottle.jpg"
-const PopupMenu = ({width, screenShown}) => {
+const PopupMenu = ({PopUpWidth, screenShown}) => {
   
   let popUpContainer
   let TophalfofPopup
   let TopHalfText
   let BottomHalfPopup
   let showForm
-  if(width){
+  if(PopUpWidth){
     showForm = "flex"
     popUpContainer = "PopupMenuOpen"
     TophalfofPopup="PopupMenuOpen__topHalfOpen"

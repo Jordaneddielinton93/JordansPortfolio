@@ -1,9 +1,9 @@
 import "./section1.scss"
 
 import {useState,useEffect} from "react"
-import SoCLogo from "../../../images/socLogo.png"
+import SoCLogo from "../../images/socLogo.png"
 
-import triedtest from "../../../images/triedtest1.mp4"
+import triedtest from "../../images/triedtest1.mp4"
 const Section1 = () => {
   let frameNumber = 0,
   playbackConst = 80;
