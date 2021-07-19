@@ -1,3 +1,32 @@
+$Lgrey:#464646;
+$FontColor:#FAFAFA;
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+@mixin centeritems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
 .section3{
   background-color: rgb(0, 0, 0);
+  background: #1a1a1a;
+  @include centeritems();
+  border-top: solid thin $Lgrey;
+  margin-left:5vw ;
+  height: 90vh;
+}
+@media screen and (max-width: 500px){
+  
+  .section3{
+    width: 100%;
+    
+    margin: 0%;
+  }
+  .aside{
+    display: none;
+  }
 }
