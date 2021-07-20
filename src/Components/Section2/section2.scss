@@ -47,12 +47,16 @@ $FontColor:#FAFAFA;
           background-image: linear-gradient(to right, #304352 0%, #d7d2cc  51%, #304352  100%);
           background-size: 200% auto;
           transition: 0.5s;
+
           &:hover{
             box-shadow: 0 0 20px #eee;
             background-image: linear-gradient(to right, paleturquoise 0%, #d7d2cc  51%, #304352  100%);
             background-position: center;
             color: red;
             height: 85%;
+          cursor: pointer;
+
+            
           }
           &:nth-child(1){
             cursor: pointer;
