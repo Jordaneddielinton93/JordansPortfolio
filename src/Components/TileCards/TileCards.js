@@ -7,7 +7,7 @@ import jest from "../../images/JestYoutube.png"
 import Blog from "../../images/blog.png"
 import codewars from "../../images/codewards.png"
 import { useState } from "react/cjs/react.development"
-import { useEffect } from "react"
+
 
 const TileCards = ({popUpMenu}) => {
 
