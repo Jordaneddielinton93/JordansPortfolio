@@ -1,4 +1,3 @@
-import {useState} from "react"
 import './App.scss';
 import {initState,reducer} from "../reducer/reducer"
 import PopupMenu from '../PopupMenu/PopupMenu';
@@ -9,8 +8,6 @@ import { useReducer } from "react";
 
 
 function App() {
-
-
 
   let [state,dispatch] = useReducer(reducer,initState)
 

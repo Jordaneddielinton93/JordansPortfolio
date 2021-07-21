@@ -6,10 +6,11 @@ import image1 from "../../images/bottle.jpg"
 import jest from "../../images/JestYoutube.png"
 import Blog from "../../images/blog.png"
 import codewars from "../../images/codewards.png"
-import { useState } from "react/cjs/react.development"
+import { useState } from "react"
 
 
-const TileCards = ({popUpMenu}) => {
+
+const TileCards = () => {
 
 
 
@@ -46,17 +47,17 @@ const TileCards = ({popUpMenu}) => {
         </span>
   
 
-        <iframe className="videos" src={`https://www.youtube.com/embed/${this.video}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        {/* <iframe className="videos" src={`https://www.youtube.com/embed/${this.video}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
 
         <img src={this.img} alt="fruit/veg" className="mainImage"/>
         <h2 className="CardTitle" >{this.title}</h2>
         <div className="Cardbox__centreScreen--allCards--leafContainer">
+          {/* <h6 className="leafBox-h6"></h6>
           <h6 className="leafBox-h6"></h6>
           <h6 className="leafBox-h6"></h6>
           <h6 className="leafBox-h6"></h6>
           <h6 className="leafBox-h6"></h6>
-          <h6 className="leafBox-h6"></h6>
-          <h6 className="leafBox-h6"></h6>
+          <h6 className="leafBox-h6"></h6> */}
 
           
         </div>
