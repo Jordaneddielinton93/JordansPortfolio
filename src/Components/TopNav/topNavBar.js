@@ -1,36 +1,6 @@
 // import {useState} from "react"
 const TopNavBar = () => {
 
-  // let nav_logo_Styles={
-  //   transition:"1s",
-  //   width:`5%`,
-  //   textContent:"JL"
-  // }
-
-  
-  // let [logoName,setLogoName] = useState("JordLinton")
-  // // let opacity=
-  // let scroll = window.scrollY;
-  // console.log(scroll)
-  
-  // window.addEventListener("scroll",(e)=>{
-  //   if(scroll>0){
-  //     nav_logo_Styles.transition = `1s`;
-  //     nav_logo_Styles.width=`5%`;
-  //     setLogoName("JL")
-  //     // logo.style.width = `5%`
-  //     // logo.innerText = "JL"
-  //     // logo.style.backgroundColor="white"
-  //     // logo.style.color="#464646"
-  //     // empty.style.width = `65%`
-  //   }else{
-  //     setLogoName("JordLinton")
-  //   }
-  // })
-
-  
-
-  
 
   let handleMouseOver = (e)=>{
     e.target.style.width = "20%"

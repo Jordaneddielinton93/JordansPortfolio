@@ -99,6 +99,13 @@ $FontColor:#FAFAFA;
       opacity: 0;
       color: black;
     }
+    & form{
+      display: none;
+    }
+    & h1{
+      display: none;
+
+    }
   }
   &__bottomHalfClosed{
     background-color: black;

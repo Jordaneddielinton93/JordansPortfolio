@@ -2,11 +2,10 @@ import "./TileCards.scss"
 
 
 
-import image1 from "../../images/bottle.jpg"
 import jest from "../../images/JestYoutube.png"
 import Blog from "../../images/blog.png"
 import codewars from "../../images/codewards.png"
-import day9 from "../../images/Day9.png"
+
 import hologram from "../../images/Hologram.png"
 import { useState } from "react"
 
@@ -29,11 +28,12 @@ const TileCards = () => {
   
 
   class cardTiles{
-    constructor(id,title,img,video){
+    constructor(id,title,img,video,build){
       this.title = title;
       this.img = img;
       this.video = video
       this.id=id
+      this.build=build
       
     }
 
@@ -47,14 +47,8 @@ const TileCards = () => {
           <img src={this.img} alt="coverphoto" className="mainImage"/>
           <h2 className="CardTitle" >{this.title}</h2>
           <div className="Cardbox__centreScreen--allCards--leafContainer">
-            {/* <h6 className="leafBox-h6"></h6>
-            <h6 className="leafBox-h6"></h6>
-            <h6 className="leafBox-h6"></h6>
-            <h6 className="leafBox-h6"></h6>
-            <h6 className="leafBox-h6"></h6>
-            <h6 className="leafBox-h6"></h6> */}
-
-            
+            <h3 className="descript-tile">Build-Type</h3>
+            <h3 className="descript-tile">{this.build}</h3>  
           </div>
         </div>
       </div>
@@ -64,10 +58,10 @@ const TileCards = () => {
     }
   }
 
-let Jest=new cardTiles("id1","Jest",jest,"sUJxU-bUOZs")
-let React=new cardTiles("id2","React",Blog,"Xk1qzWs65rM")
-let Codewars=new cardTiles("id3","Code Wars",codewars,"SEFsIolXSYk")
-let Hologram=new cardTiles("id4","Hologram",hologram,"gLqjUK0cRi0")
+let Jest=new cardTiles("id1","Jest",jest,"sUJxU-bUOZs","React")
+let React=new cardTiles("id2","React",Blog,"Xk1qzWs65rM","React")
+let Codewars=new cardTiles("id3","Code Wars",codewars,"SEFsIolXSYk","YouTube")
+let Hologram=new cardTiles("id4","Hologram",hologram,"gLqjUK0cRi0","Python")
 
 
 let UtubeCards = [
