@@ -6,13 +6,12 @@ import image1 from "../../images/bottle.jpg"
 import jest from "../../images/JestYoutube.png"
 import Blog from "../../images/blog.png"
 import codewars from "../../images/codewards.png"
+import day9 from "../../images/Day9.png"
+import hologram from "../../images/Hologram.png"
 import { useState } from "react"
 
 
-
 const TileCards = () => {
-
-
 
   let [showAllCards,setShowAllCards] = useState("showAllCards")
   let [cardClassSizeing,setCardClassSizeing] = useState("CardContainer-Item")
@@ -21,7 +20,10 @@ const TileCards = () => {
     setCardClassSizeing("CardContainerBIG")
     setShowAllCards(title)
     console.log(title)
-
+  }
+  function setDefaultCardLayout(){
+    setShowAllCards("showAllCards")
+    setCardClassSizeing("CardContainer-Item")
   }
 
   
@@ -37,30 +39,26 @@ const TileCards = () => {
 
     makeCard(){
       return(
-  
-        
-
       <div key={this.id} 
-      className={cardClassSizeing} onClick={()=>filter(this.title)} >
-        <button onClick={console.log("hellop")}>
-          X
-        </button>
-        
-        <iframe className="videos" src={`https://www.youtube.com/embed/${this.video}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      className={cardClassSizeing}  >
+        <div className="image-Text" onClick={()=>filter(this.title)}>
+          <iframe className="videos" src={`https://www.youtube.com/embed/${this.video}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
 
-        <img src={this.img} alt="coverphoto" className="mainImage"/>
-        <h2 className="CardTitle" >{this.title}</h2>
-        <div className="Cardbox__centreScreen--allCards--leafContainer">
-          {/* <h6 className="leafBox-h6"></h6>
-          <h6 className="leafBox-h6"></h6>
-          <h6 className="leafBox-h6"></h6>
-          <h6 className="leafBox-h6"></h6>
-          <h6 className="leafBox-h6"></h6>
-          <h6 className="leafBox-h6"></h6> */}
+          <img src={this.img} alt="coverphoto" className="mainImage"/>
+          <h2 className="CardTitle" >{this.title}</h2>
+          <div className="Cardbox__centreScreen--allCards--leafContainer">
+            {/* <h6 className="leafBox-h6"></h6>
+            <h6 className="leafBox-h6"></h6>
+            <h6 className="leafBox-h6"></h6>
+            <h6 className="leafBox-h6"></h6>
+            <h6 className="leafBox-h6"></h6>
+            <h6 className="leafBox-h6"></h6> */}
 
-          
+            
+          </div>
         </div>
       </div>
+      
       // this is where the card is made 🃏🎴
       )
     }
@@ -68,15 +66,12 @@ const TileCards = () => {
 
 let Jest=new cardTiles("id1","Jest",jest,"sUJxU-bUOZs")
 let React=new cardTiles("id2","React",Blog,"Xk1qzWs65rM")
-let Codewars=new cardTiles("id3","Code wars",codewars,"SEFsIolXSYk")
-let Hologram=new cardTiles("id4","Hologram",image1,"gLqjUK0cRi0")
-let Card1=new cardTiles("id5","card1",image1,"sUJxU-bUOZs")
-let Card2=new cardTiles("id6","card2",image1,"sUJxU-bUOZs")
-let Card3=new cardTiles("id7","card3",image1,"sUJxU-bUOZs")
-let Card4=new cardTiles("id8","card4",image1,"sUJxU-bUOZs")
+let Codewars=new cardTiles("id3","Code Wars",codewars,"SEFsIolXSYk")
+let Hologram=new cardTiles("id4","Hologram",hologram,"gLqjUK0cRi0")
+
 
 let UtubeCards = [
-  Jest,React,Codewars,Hologram,Card1,Card2,Card3,Card4
+  Jest,React,Codewars,Hologram
 ]
 // array of all the the fruit,Veg and herbs made into a card
 
@@ -105,27 +100,17 @@ switch (showAllCards) {
   case "Hologram":
     returnedCards = Hologram.makeCard()
     break
-  case "Card1":
-    returnedCards = Card1.makeCard()
-    break
-  case "Card2":
-    returnedCards = Card2.makeCard()
-    break
-  case "Card3":
-    returnedCards = Card3.makeCard()
-    break
-  case "Card4":
-    returnedCards = Card4.makeCard()
-    break
-  
   default:
     break;
 }
 
-
-
   return ( 
     <>
+    <button 
+      className="MenuButton" 
+      style={{display:showAllCards!=="showAllCards"?"block":"none"}}
+      onClick={setDefaultCardLayout}>Show all cards</button>
+
     <div className="CardContainer">
       {returnedCards}
     </div>

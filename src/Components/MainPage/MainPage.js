@@ -5,6 +5,8 @@ import Section3 from "../Section3/Section3"
 
 
 const MainPage = () => {
+
+  
   
   window.addEventListener("scroll",(e)=>{
     let logo = document.querySelector(".nav__logo")

@@ -11,9 +11,10 @@ function App() {
 
   let [state,dispatch] = useReducer(reducer,initState)
 
+  
+
   return (
     <div className="App">
-      
       <TopNavBar/>
       <Sidebar dispatch={dispatch}/>
       <MainPage/>

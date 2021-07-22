@@ -16,6 +16,7 @@ $FontColor:#FAFAFA;
   background: #1a1a1a;
   @include centeritems();
   border-top: solid thin $Lgrey;
+  flex-direction: column;
   margin-left:5vw ;
   color: $Lgrey;
 }

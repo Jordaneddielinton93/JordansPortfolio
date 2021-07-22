@@ -1,3 +1,12 @@
+
+.MenuButton{
+  position: relative;
+  height: 44px;
+  width: 80%;
+  font-size: 2rem;
+  
+}
+
 .CardContainer{
   display: flex;
   width: 100%;
@@ -5,18 +14,23 @@
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  & .image-Text{
+    height: 100%;
+    width: 100%;
+  }
+  & button{
+    display: none;
+  }
   
   &-Item{
     width: 23%;
-    height: 300px;
+    height: 400px;
     border: solid 1px rgb(240, 240, 240) ;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     margin-bottom: 40px;
     margin-top: 40px;
     overflow: hidden;
-    & button{
-      display: none;
-    }
+    
     
     & .videos{
       display: none;
@@ -25,7 +39,7 @@
     }
     &:hover{
       box-shadow: 0 0 20px #eee;
-      background-image: linear-gradient(to right, paleturquoise 0%, #d7d2cc  51%, #304352  100%);
+      background-color: rgb(240, 240, 240) ;
       cursor: pointer;
       & img{
         transition: 1s;
@@ -39,7 +53,7 @@
       width: 100%;
       object-fit: contain;
       height: 65%;
-      border-bottom: thin black solid;
+      border-bottom: thin rgb(255, 255, 255) solid;
     }
   }
 }

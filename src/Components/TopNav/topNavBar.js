@@ -1,4 +1,36 @@
+// import {useState} from "react"
 const TopNavBar = () => {
+
+  // let nav_logo_Styles={
+  //   transition:"1s",
+  //   width:`5%`,
+  //   textContent:"JL"
+  // }
+
+  
+  // let [logoName,setLogoName] = useState("JordLinton")
+  // // let opacity=
+  // let scroll = window.scrollY;
+  // console.log(scroll)
+  
+  // window.addEventListener("scroll",(e)=>{
+  //   if(scroll>0){
+  //     nav_logo_Styles.transition = `1s`;
+  //     nav_logo_Styles.width=`5%`;
+  //     setLogoName("JL")
+  //     // logo.style.width = `5%`
+  //     // logo.innerText = "JL"
+  //     // logo.style.backgroundColor="white"
+  //     // logo.style.color="#464646"
+  //     // empty.style.width = `65%`
+  //   }else{
+  //     setLogoName("JordLinton")
+  //   }
+  // })
+
+  
+
+  
 
   let handleMouseOver = (e)=>{
     e.target.style.width = "20%"
@@ -15,7 +47,7 @@ const TopNavBar = () => {
 
   return ( 
     <nav className="nav">
-      <div className="nav__logo" >JordLinton</div>
+      <div className="nav__logo"  >JordLinton</div>
       <div className="nav__empty">
         <a href="https://www.youtube.com/channel/UCDxWVy1PYe_-Bnvdxm23s8w" target="_blank" rel="noreferrer"><i className="fab fa-youtube" ></i></a>
          <a href="https://github.com/Jordaneddielinton93" target="_blank" rel="noreferrer"><i className="fab fa-github"></i></a>
