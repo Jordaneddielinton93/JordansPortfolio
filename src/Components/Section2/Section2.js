@@ -29,9 +29,9 @@ const Section2 = () => {
         break;
       case "four":
         setDisplay("section2__heading__folder__screen--content4")
-        setLinks("https://jordsshoppinglist.netlify.app/")
+        setLinks("https://chatapp-social.netlify.app/")
         console.log("hi")
-        setProjectName("ShoppingList")
+        setProjectName("Social Media")
         break;
         
       default:
@@ -49,7 +49,7 @@ const Section2 = () => {
               <h2 className="section2__heading__folder__header--h1" onClick={()=>changedisplay("one")}>GroupProject2</h2>
               <h2 className="section2__heading__folder__header--h1" onClick={()=>changedisplay("two")}>ResturantApp</h2>
               <h2 className="section2__heading__folder__header--h1" onClick={()=>changedisplay("three")}>GroupProject1</h2>
-              <h2 className="section2__heading__folder__header--h1" onClick={()=>changedisplay("four")}>ShoppingList</h2>
+              <h2 className="section2__heading__folder__header--h1" onClick={()=>changedisplay("four")}>Social media</h2>
               
            </header>
            <div className="section2__heading__folder__screen">
