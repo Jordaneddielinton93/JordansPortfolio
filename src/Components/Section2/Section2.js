@@ -17,21 +17,21 @@ const Section2 = () => {
         break;
       case "two":
         setDisplay("section2__heading__folder__screen--content2")
+        setLinks("https://web-road-map.netlify.app/")
+        console.log("hi")
+        setProjectName("RoadMapStore")
+        break;
+      case "three":
+        setDisplay("section2__heading__folder__screen--content3")
         setLinks("https://jordansrecipe.netlify.app/")
         console.log("hi")
         setProjectName("Resturant")
         break;
-      case "three":
-        setDisplay("section2__heading__folder__screen--content3")
+      case "four":
+        setDisplay("section2__heading__folder__screen--content4")
         setLinks("https://lordofthepokeballwars.netlify.app/")
         console.log("hi")
         setProjectName("GroupProject2")
-        break;
-      case "four":
-        setDisplay("section2__heading__folder__screen--content4")
-        setLinks("https://chatapp-social.netlify.app/")
-        console.log("hi")
-        setProjectName("Social Media")
         break;
         
       default:
@@ -47,9 +47,9 @@ const Section2 = () => {
            <header className="section2__heading__folder__header">
               <a className="section2__heading__folder__header--h1"  href={links} target="_blank" rel="noreferrer">Click To Vist</a>
               <h2 className="section2__heading__folder__header--h1" onClick={()=>changedisplay("one")}>GroupProject2</h2>
-              <h2 className="section2__heading__folder__header--h1" onClick={()=>changedisplay("two")}>ResturantApp</h2>
-              <h2 className="section2__heading__folder__header--h1" onClick={()=>changedisplay("three")}>GroupProject1</h2>
-              <h2 className="section2__heading__folder__header--h1" onClick={()=>changedisplay("four")}>Social media</h2>
+              <h2 className="section2__heading__folder__header--h1" onClick={()=>changedisplay("two")}>RoadMapStore</h2>
+              <h2 className="section2__heading__folder__header--h1" onClick={()=>changedisplay("three")}>ResturantApp</h2>
+              <h2 className="section2__heading__folder__header--h1" onClick={()=>changedisplay("four")}>GroupProject1</h2>
               
            </header>
            <div className="section2__heading__folder__screen">
