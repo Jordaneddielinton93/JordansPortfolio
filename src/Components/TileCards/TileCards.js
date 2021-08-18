@@ -5,7 +5,10 @@ import "./TileCards.scss"
 import jest from "../../images/JestYoutube.png"
 import Blog from "../../images/blog.png"
 import codewars from "../../images/codewards.png"
-
+import UseContext from "../../images/useContext.png"
+import UseReducer from "../../images/useReducer.png"
+import UseEffect from "../../images/useEffect.png"
+import UseState from "../../images/usestate.png"
 import hologram from "../../images/Hologram.png"
 import { useState } from "react"
 
@@ -62,10 +65,14 @@ let Jest=new cardTiles("id1","Jest",jest,"sUJxU-bUOZs","React")
 let React=new cardTiles("id2","React",Blog,"Xk1qzWs65rM","React")
 let Codewars=new cardTiles("id3","Code Wars",codewars,"SEFsIolXSYk","YouTube")
 let Hologram=new cardTiles("id4","Hologram",hologram,"gLqjUK0cRi0","Python")
+let useContext=new cardTiles("id4","useContext",UseContext,"Zw_Pl0kHemI","React")
+let useReducer=new cardTiles("id4","useReducer",UseReducer,"Q3-l8zmP9Xk","React")
+let useEffect=new cardTiles("id4","useEffect",UseEffect,"3KuRSYjHX18","React")
+let uSeState=new cardTiles("id4","useState",UseState,"5zYBeaUq86U","React")
 
 
 let UtubeCards = [
-  Jest,React,Codewars,Hologram
+  uSeState,useContext,useReducer,useEffect,Jest,React,Codewars,Hologram
 ]
 // array of all the the fruit,Veg and herbs made into a card
 
@@ -93,6 +100,18 @@ switch (showAllCards) {
     break
   case "Hologram":
     returnedCards = Hologram.makeCard()
+    break
+  case "useContext":
+    returnedCards = useContext.makeCard()
+    break
+  case "useReducer":
+    returnedCards = useReducer.makeCard()
+    break
+  case "useEffect":
+    returnedCards = useEffect.makeCard()
+    break
+  case "useState":
+    returnedCards = uSeState.makeCard()
     break
   default:
     break;

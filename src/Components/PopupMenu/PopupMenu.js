@@ -1,7 +1,12 @@
 import "./popMenu.scss"
 import bottle from "../../images/bottle.jpg"
+import { useContext } from "react"
+import { pageWrapper } from "../App/App"
+
 const PopupMenu = ({PopUpWidth, screenShown}) => {
   
+  let stateObj = useContext(pageWrapper)
+
   let popUpContainer
   let TophalfofPopup
   let TopHalfText
