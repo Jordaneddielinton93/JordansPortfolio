@@ -6,8 +6,6 @@ import TopNavBar from "../TopNav/topNavBar"
 import Sidebar from "../SideNav/Sidebar"
 import MainPage from "../MainPage/MainPage"
 import { useReducer } from "react";
-import { useContext } from 'react/cjs/react.development';
-
 export let pageWrapper = react.createContext()
 
 function App() {
@@ -21,9 +19,9 @@ function App() {
 
     <div className="App">
       <TopNavBar/>
-      <Sidebar dispatch={dispatch}/>
+      <Sidebar/>
       <MainPage/>
-      <PopupMenu PopUpWidth={state.PopUpWidth} screenShown={state.screenShown} />
+      <PopupMenu/>
     </div>
     </pageWrapper.Provider>
 

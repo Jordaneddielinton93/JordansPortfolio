@@ -3,7 +3,7 @@ import bottle from "../../images/bottle.jpg"
 import { useContext } from "react"
 import { pageWrapper } from "../App/App"
 
-const PopupMenu = ({PopUpWidth, screenShown}) => {
+const PopupMenu = () => {
   
   let stateObj = useContext(pageWrapper)
 
@@ -12,7 +12,7 @@ const PopupMenu = ({PopUpWidth, screenShown}) => {
   let TopHalfText
   let BottomHalfPopup
   let showForm
-  if(PopUpWidth){
+  if(stateObj.state.PopUpWidth){
     showForm = "flex"
     popUpContainer = "PopupMenuOpen"
     TophalfofPopup="PopupMenuOpen__topHalfOpen"
@@ -28,7 +28,7 @@ const PopupMenu = ({PopUpWidth, screenShown}) => {
     BottomHalfPopup="PopupMenuClosed__bottomHalfClosed"
   }
   
-  return screenShown==="message"? ( 
+  return stateObj.state.screenShown==="message"? ( 
     <div className={popUpContainer} >
       <div className={TophalfofPopup} >
         <section className={TopHalfText}>
